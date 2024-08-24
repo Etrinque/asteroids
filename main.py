@@ -4,8 +4,6 @@ from overlay import *
 
 def main():
     pygame.init()
-    
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     print("Starting asteroids!")
     print(f"Screen width: {SCREEN_WIDTH}" + "\n" + f"Screen height: {SCREEN_HEIGHT}")
 
@@ -15,7 +13,7 @@ def main():
                 return
         screen.fill(color=(0,0,0))
         display_fps()
-        clock.tick(60)
+        dt = clock.tick(60) / 1000
         
         pygame.display.flip()
 

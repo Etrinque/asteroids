@@ -1,11 +1,10 @@
 import pygame
+from constants import *
+
 
 def init_screen_and_clock():
-    global screen, display, clock
+    global display, clock
     pygame.init()
-    WINDOW_SIZE = (1150, 640)
-    pygame.display.set_caption('Game')
-    screen = pygame.display.set_mode(WINDOW_SIZE, 0, 32)
     clock = pygame.time.Clock()
 
 
