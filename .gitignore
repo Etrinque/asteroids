@@ -1,0 +1,5 @@
+/*.cfg
+/lib*
+/inc*
+/__py*
+bin
