@@ -1,11 +1,13 @@
 import pygame 
 
-
-
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
+SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+
+PLAYER_RADIUS = 20
+PLAYER_TURN_SPEED = 300
+PLAYER_SPEED = 250
 
 
 ASTEROID_MIN_RADIUS = 20

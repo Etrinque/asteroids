@@ -20,7 +20,7 @@ def create_fonts(font_sizes_list):
 def render(fnt, what, color, where):
     # "Renders the fonts as passed from display_fps"
     text_to_show = fnt.render(what, 0, pygame.Color(color))
-    screen.blit(text_to_show, where)
+    SCREEN.blit(text_to_show, where)
 
 
 def display_fps():
